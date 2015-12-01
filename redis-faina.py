@@ -9,7 +9,7 @@ line_re_24 = re.compile(r"""
     """, re.VERBOSE)
 
 line_re_26 = re.compile(r"""
-    ^(?P<timestamp>[\d\.]+)\s\[(?P<db>\d+)\s\d+\.\d+\.\d+\.\d+:\d+]\s"(?P<command>\w+)"(\s"(?P<key>[^(?<!\\)"]+)(?<!\\)")?(\s(?P<args>.+))?$
+    ^(?P<timestamp>[\d\.]+)\s\[(?P<db>\d+)\s[^\]]+]\s"(?P<command>\w+)"(\s"(?P<key>[^(?<!\\)"]+)(?<!\\)")?(\s(?P<args>.+))?$
     """, re.VERBOSE)
 
 class StatCounter(object):
